@@ -102,7 +102,6 @@ export default function TestimonialSection() {
                   {testimonials[currentTestimonial].text}
                 </p>
 
-                {/* Navigation buttons below text */}
                 <div className="flex justify-start gap-2">
                   <button
                     onClick={prevTestimonial}
@@ -121,7 +120,6 @@ export default function TestimonialSection() {
                 </div>
               </div>
 
-              {/* Slide indicator dots */}
               <div className="flex justify-center gap-2 mt-4">
                 {testimonials.map((_, index) => (
                   <button
@@ -138,7 +136,7 @@ export default function TestimonialSection() {
           <div className="relative">
             <div className="relative md:block hidden h-[340px]">
               <Image
-                src='/assets/img/section/map.png'
+                src='/assets/img/section/image.png'
                 fill
                 alt='map'
                 className='w-full h-full rounded-2xl'

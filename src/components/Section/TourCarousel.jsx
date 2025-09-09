@@ -56,7 +56,7 @@ const TourCarousel = () => {
         </h1>
         <p className="text-gray-800 text-base md:text-lg mt-2">اینجا انتخاب و سفرهای محبوبت رو پیدا کن</p>
       </motion.div>
-
+      
       <button
         onClick={() => instanceRef.current?.prev()}
         className="absolute z-10 left-4 top-[60%] -translate-y-1/2 bg-white/90 text-gray-600 rounded-full hover:bg-orange-600 hover:text-white transition shadow p-2"
