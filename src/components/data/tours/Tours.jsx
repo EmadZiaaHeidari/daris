@@ -1,0 +1,58 @@
+export const tours = [
+  {
+    id: 1,
+    title: "کویر منحصر به فرد یزد",
+    image: "assets/img/tours/kaviryazd.jpg",
+    Date: " 1404 اردیبهشت",
+    description: "تور داخلی یزد",
+  },
+  {
+    id: 2,
+    title: "کیش با بهترین لوکیشن ها ",
+    image: "assets/img/tours/kish.png",
+    Date: " 1404 مراد",
+    description: "تور داخلی کیش",
+  },
+  {
+    id: 3,
+    title: "کاشان با جاذبه های دیدنی",
+    image: "assets/img/tours/kashan.jpg",
+    Date: " 1404 تیر",
+    description: "تور داخلی کاشان",
+  },
+  {
+    id: 4,
+    title: "تور ازبکشتان و تاجیکستان",
+    image: "assets/img/tours/to.jpg",
+    Date: " 1404 شهریور",
+    description: "ازبکستان تاجیکستان تور خارجی",
+  },
+  {
+    id: 5,
+    title: "تور ابشار آهکی - به دور از هیاهو",
+    image: "assets/img/tours/abshar.jpg",
+    Date: " 1404 اردیبهشت",
+    description: "تور داخلی آبشار آهکی",
+  },
+  {
+    id: 6,
+    title: "تور فرانسه اسپانیا و ایتالیا ",
+    image: "assets/img/tours/fae.jpeg",
+    Date: " 1404 مهر",
+    description: "تور خارجی اروپا",
+  },
+  {
+    id: 7,
+    title: "تور جذاب کانادا با ویزای توریستی",
+    image: "assets/img/tours/kanada.png",
+    Date: " 1404 اسفند",
+    description: "تور خارجی کانادا",
+  },
+  {
+    id: 8,
+    title: "شهر زیبای شیراز",
+    image: "assets/img/tours/shiraz.jpg",
+    Date: " 1404 اردیبهشت",
+    description: "تور داخلی شیراز",
+  },
+]
