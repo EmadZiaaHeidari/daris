@@ -129,8 +129,6 @@ function Navbar() {
                     </motion.div>
                   )}
                 </AnimatePresence>
-
-
               </div>
             )
           }
@@ -198,7 +196,7 @@ function Navbar() {
         <AuthModal />
       </div>
 
-      <div className="md:hidden mt-4 w-full flex flex-wrap pb-7 justify-center items-center sm:gap-18 gap-8 px-4">
+      <div className="md:hidden mt-4 w-full  flex  pb-7 justify-center items-center sm:gap-18 gap-3 px-4">
         <div className="shrink-0">
           <MegaMenu />
         </div>

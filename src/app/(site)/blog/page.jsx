@@ -31,7 +31,7 @@ const Blog = () => {
 
                             <div className="mt-4">
                                 <h2 className="text-md font-semibold text-gray-900">{article.title}</h2>
-                                <Link href='travelbenefits'>
+                                <Link href={`/travelbenefits/${article.id}`}>
                                     <button className="mt-4 cursor-pointer text-white bg-orange-600 p-3 rounded-lg text-sm">
                                         ادامه مطلب
                                     </button>

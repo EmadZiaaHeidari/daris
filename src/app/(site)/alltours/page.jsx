@@ -41,7 +41,7 @@ export default function PaginatedCarousel({ title, subtitle }) {
     if (current + 1 < total) pages.add(current + 1);
     return Array.from(pages).sort((a, b) => a - b);
   };
-  
+
   const withEllipses = (arr) => {
     const out = [];
     for (let i = 0; i < arr.length; i++) {
@@ -135,50 +135,50 @@ export default function PaginatedCarousel({ title, subtitle }) {
           ))}
         </div>
 
-<div className="mt-6" dir="ltr">
-  <div className="flex justify-start items-center gap-2">
-    {currentPage > 1 && (
-      <button
-        onClick={() => handlePageChange(currentPage - 1)}
-        className="h-10 px-4 rounded-full border border-gray-200 bg-white text-gray-700 hover:border-orange-500 hover:text-orange-600 hover:shadow-sm transition flex items-center gap-2"
-        aria-label="Previous page"
-      >
-        <ChevronLeft className="w-4 h-4" />
-        <span className="text-sm">Prev</span>
-      </button>
-    )}
-    <div className="flex items-center gap-1">
-      {withEllipses(getPageWindow(currentPage, totalPages)).map((p, idx) =>
-        p === '…' ? (
-          <span key={`dots-${idx}`} className="px-2 text-gray-400 select-none">…</span>
-        ) : (
-          <button
-            key={`p-${p}`}
-            onClick={() => handlePageChange(p)}
-            aria-current={currentPage === p ? 'page' : undefined}
-            className={`h-10 min-w-10 px-3 rounded-full border transition text-sm
+        <div className="mt-6" dir="ltr">
+          <div className="flex justify-start items-center gap-2">
+            {currentPage > 1 && (
+              <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                className="h-10 px-4 rounded-full border border-gray-200 bg-white text-gray-700 hover:border-orange-500 hover:text-orange-600 hover:shadow-sm transition flex items-center gap-2"
+                aria-label="Previous page"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                <span className="text-sm">Prev</span>
+              </button>
+            )}
+            <div className="flex items-center gap-1">
+              {withEllipses(getPageWindow(currentPage, totalPages)).map((p, idx) =>
+                p === '…' ? (
+                  <span key={`dots-${idx}`} className="px-2 text-gray-400 select-none">…</span>
+                ) : (
+                  <button
+                    key={`p-${p}`}
+                    onClick={() => handlePageChange(p)}
+                    aria-current={currentPage === p ? 'page' : undefined}
+                    className={`h-10 min-w-10 px-3 rounded-full border transition text-sm
               ${currentPage === p
-                ? 'bg-orange-600 border-orange-600 text-white shadow-sm'
-                : 'bg-white border-gray-200 text-gray-700 hover:border-orange-500 hover:text-orange-600'}`}
-          >
-            {p}
-          </button>
-        )
-      )}
-    </div>
+                        ? 'bg-orange-600 border-orange-600 text-white shadow-sm'
+                        : 'bg-white border-gray-200 text-gray-700 hover:border-orange-500 hover:text-orange-600'}`}
+                  >
+                    {p}
+                  </button>
+                )
+              )}
+            </div>
 
-    {currentPage < totalPages && (
-      <button
-        onClick={() => handlePageChange(currentPage + 1)}
-        className="h-10 px-4 rounded-full border border-gray-200 bg-white text-gray-700 hover:border-orange-500 hover:text-orange-600 hover:shadow-sm transition flex items-center gap-2"
-        aria-label="Next page"
-      >
-        <span className="text-sm">Next</span>
-        <ChevronRight className="w-4 h-4" />
-      </button>
-    )}
-  </div>
-</div>
+            {currentPage < totalPages && (
+              <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                className="h-10 px-4 rounded-full border border-gray-200 bg-white text-gray-700 hover:border-orange-500 hover:text-orange-600 hover:shadow-sm transition flex items-center gap-2"
+                aria-label="Next page"
+              >
+                <span className="text-sm">Next</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            )}
+          </div>
+        </div>
 
       </div>
     </div>

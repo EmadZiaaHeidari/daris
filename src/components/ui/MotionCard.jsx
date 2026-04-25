@@ -29,7 +29,6 @@ export default function MotionCard({ icon, title, children, className = "" }) {
                     {title}
                 </div>
             </div>
-
             {children && <div className="mt-3 text-sm text-gray-600">{children}</div>}
         </motion.div>
     );

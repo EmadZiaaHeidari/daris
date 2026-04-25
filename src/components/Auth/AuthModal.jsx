@@ -40,7 +40,7 @@ export default function AuthModal() {
       <motion.button
         ref={buttonRef}
         onClick={() => setShowModal(true)}
-        className="bg-white/20 backdrop-blur-md cursor-pointer text-white px-5 py-2.5 rounded-xl hover:bg-white hover:text-orange-600 transition-colors duration-300 font-semibold border-2 border-white/40 hover:border-white shadow-lg hover:shadow-2xl"
+        className="bg-white/20 backdrop-blur-md cursor-pointer text-white px-2 sm:px-5  py-2.5 rounded-xl hover:bg-white hover:text-orange-600 transition-colors duration-300 font-semibold border-2 border-white/40 hover:border-white shadow-lg hover:shadow-2xl"
         whileHover={{
           y: -5,
           x: [0, -4, 4, -4, 4, -2, 2, 0],
